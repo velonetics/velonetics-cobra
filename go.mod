@@ -4,9 +4,9 @@ go 1.25.3
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/velonetics/velonetics-audit v0.9.3
-	github.com/velonetics/velonetics-koanf v0.0.0-20251111142508-ab36eebbcf9b
-	github.com/velonetics/lura/v2 v2.12.1
+	github.com/velonetics/velonetics-audit v1.0.0
+	github.com/velonetics/velonetics-koanf v1.0.0
+	github.com/velonetics/lura/v2 v2.0.0
 	github.com/mattn/go-isatty v0.0.20
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.1
 	github.com/spf13/cobra v1.8.1
@@ -98,28 +98,28 @@ require (
 	github.com/knadh/koanf/providers/env v1.1.0 // indirect
 	github.com/knadh/koanf/providers/file v1.2.0 // indirect
 	github.com/knadh/koanf/v2 v2.3.0 // indirect
-	github.com/velonetics/binder v0.0.0-20250826131726-e91a8a754ef8 // indirect
-	github.com/velonetics/bloomfilter/v2 v2.1.0 // indirect
-	github.com/velonetics/flatmap v1.2.0 // indirect
-	github.com/velonetics/go-auth0/v2 v2.0.1 // indirect
-	github.com/velonetics/httpcache v1.1.0 // indirect
-	github.com/velonetics/velonetics-botdetector/v2 v2.3.0 // indirect
+	github.com/velonetics/binder v1.0.0 // indirect
+	github.com/velonetics/bloomfilter/v2 v2.0.0 // indirect
+	github.com/velonetics/flatmap v1.0.0 // indirect
+	github.com/velonetics/go-auth0/v2 v2.0.0 // indirect
+	github.com/velonetics/httpcache v1.0.0 // indirect
+	github.com/velonetics/velonetics-botdetector/v2 v2.0.0 // indirect
 	github.com/velonetics/velonetics-circuitbreaker/v3 v3.0.0 // indirect
-	github.com/velonetics/velonetics-cors/v2 v2.2.0 // indirect
-	github.com/velonetics/velonetics-gelf/v2 v2.1.0 // indirect
-	github.com/velonetics/velonetics-gologging/v2 v2.1.1 // indirect
-	github.com/velonetics/velonetics-httpcache/v2 v2.2.0 // indirect
-	github.com/velonetics/velonetics-httpsecure/v2 v2.2.0 // indirect
-	github.com/velonetics/velonetics-influx/v2 v2.2.0 // indirect
-	github.com/velonetics/velonetics-jose/v2 v2.12.2 // indirect
-	github.com/velonetics/velonetics-logstash/v2 v2.1.0 // indirect
-	github.com/velonetics/velonetics-lua/v2 v2.9.0 // indirect
-	github.com/velonetics/velonetics-metrics/v2 v2.1.0 // indirect
-	github.com/velonetics/velonetics-opencensus/v2 v2.2.0 // indirect
-	github.com/velonetics/velonetics-ratelimit/v3 v3.3.0 // indirect
-	github.com/velonetics/velonetics-rss/v2 v2.1.1 // indirect
-	github.com/velonetics/velonetics-xml/v2 v2.2.0 // indirect
-	github.com/velonetics/lru v0.0.0-20250121172718-0e3a6eab620d // indirect
+	github.com/velonetics/velonetics-cors/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-gelf/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-gologging/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-httpcache/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-httpsecure/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-influx/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-jose/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-logstash/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-lua/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-metrics/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-opencensus/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-ratelimit/v3 v3.0.0 // indirect
+	github.com/velonetics/velonetics-rss/v2 v2.0.0 // indirect
+	github.com/velonetics/velonetics-xml/v2 v2.0.0 // indirect
+	github.com/velonetics/lru v1.0.0 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
