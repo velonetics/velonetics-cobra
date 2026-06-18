@@ -20,5 +20,8 @@ func runFunc(cmd *cobra.Command, _ []string) {
 	if port != 0 {
 		serviceConfig.Port = port
 	}
+	if usageDisable {
+		os.Setenv("USAGE_DISABLE", "1")
+	}
 	run(serviceConfig)
 }

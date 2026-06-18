@@ -15,6 +15,7 @@ var (
 	cfgFile              string
 	debug                int
 	port                 int
+	usageDisable         bool
 	checkGinRoutes       bool
 	checkDebug           int
 	lintCurrentSchema    bool
@@ -105,7 +106,8 @@ func init() {
 	CheckCommand.AddConstraint(MutuallyExclusive("lint", "lint-no-network", "lint-schema"))
 
 	portFlag := IntFlagBuilder(&port, "port", "p", 0, "Listening port for the http service")
-	RunCommand = NewCommand(runCmd, cfgFlag, debugFlag, portFlag)
+	usageDisableFlag := BoolFlagBuilder(&usageDisable, "usage-disable", "", false, "Disables anonymous usage reporting")
+	RunCommand = NewCommand(runCmd, cfgFlag, debugFlag, portFlag, usageDisableFlag)
 
 	goSumFlag := StringFlagBuilder(&goSum, "sum", "s", goSum, "Path to the go.sum file to analyze")
 	goVersionFlag := StringFlagBuilder(&goVersion, "go", "g", goVersion, "The version of the go compiler used for your plugin")
