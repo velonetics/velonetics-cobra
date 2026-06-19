@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	cmd "github.com/pucora/velonetics-cobra/v2"
-	koanf "github.com/pucora/velonetics-koanf"
+	cmd "github.com/pucora/pucora-cobra/v2"
+	koanf "github.com/pucora/pucora-koanf"
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/logging"
 	"github.com/pucora/lura/v2/proxy"

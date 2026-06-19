@@ -14,19 +14,19 @@ package main
 import (
 	"os"
 
-	"github.com/pucora/velonetics-cobra/v2"
-	"github.com/pucora/velonetics-viper/v2"
+	"github.com/pucora/pucora-cobra/v2"
+	"github.com/pucora/pucora-viper/v2"
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/logging"
 	"github.com/pucora/lura/v2/proxy"
-	veloneticsgin "github.com/pucora/lura/v2/router/gin"
+	pucoragin "github.com/pucora/lura/v2/router/gin"
 )
 
 func main() {
 
 	cmd.Execute(viper.New(), func(serviceConfig config.ServiceConfig) {
 		logger, _ := logging.NewLogger("DEBUG", os.Stdout, "")
-		veloneticsgin.DefaultFactory(proxy.DefaultFactory(logger), logger).New().Run(serviceConfig)
+		pucoragin.DefaultFactory(proxy.DefaultFactory(logger), logger).New().Run(serviceConfig)
 	})
 
 }

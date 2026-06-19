@@ -1,4 +1,4 @@
-module github.com/pucora/velonetics-cobra/v2
+module github.com/pucora/pucora-cobra/v2
 
 go 1.17
 

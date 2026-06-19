@@ -10,14 +10,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pucora/velonetics-cobra/v2/dumper"
+	"github.com/pucora/pucora-cobra/v2/dumper"
 	"github.com/santhosh-tekuri/jsonschema/v6"
 
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/core"
 	"github.com/pucora/lura/v2/logging"
 	"github.com/pucora/lura/v2/proxy"
-	veloneticsgin "github.com/pucora/lura/v2/router/gin"
+	pucoragin "github.com/pucora/lura/v2/router/gin"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"
@@ -181,7 +181,7 @@ var RunRouterFunc = func(cfg config.ServiceConfig) (err error) {
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-	veloneticsgin.DefaultFactory(proxy.DefaultFactory(logging.NoOp), logging.NoOp).NewWithContext(ctx).Run(cfg)
+	pucoragin.DefaultFactory(proxy.DefaultFactory(logging.NoOp), logging.NoOp).NewWithContext(ctx).Run(cfg)
 	cancel()
 	return nil
 }
