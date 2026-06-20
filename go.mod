@@ -5,6 +5,7 @@ go 1.25.3
 require (
 	github.com/gin-gonic/gin v1.12.0
 	github.com/mattn/go-isatty v0.0.20
+	github.com/pucora/pucora-revoker/v2 v2.0.0
 	github.com/pucora/lura/v2 v2.0.9
 	github.com/pucora/pucora-audit v1.0.2
 	github.com/pucora/pucora-koanf v1.0.1

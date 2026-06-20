@@ -42,6 +42,7 @@ var (
 	PluginCommand  Command
 	VersionCommand Command
 	AuditCommand   Command
+	RevokerCommand Command
 
 	rootCmd = &cobra.Command{
 		Use:   "pucora",
@@ -88,6 +89,15 @@ var (
 		Run:     auditFunc,
 		Example: "pucora audit -i 1.1.1,1.1.2 -s CRITICAL -c pucora.json",
 	}
+
+	revokerCmd = &cobra.Command{
+		Use:     "revoker",
+		Short:   "Starts a revocation service.",
+		Long:    "Starts a standalone revocation server that coordinates JWT token revocation across a Pucora cluster.",
+		Run:     revokerFunc,
+		Aliases: []string{"revoke"},
+		Example: "pucora revoker -c revoker.json",
+	}
 )
 
 func init() {
@@ -123,7 +133,9 @@ func init() {
 
 	VersionCommand = NewCommand(versionCmd)
 
-	DefaultRoot = NewRoot(RootCommand, CheckCommand, RunCommand, PluginCommand, VersionCommand, AuditCommand)
+	RevokerCommand = NewCommand(revokerCmd, cfgFlag)
+
+	DefaultRoot = NewRoot(RootCommand, CheckCommand, RunCommand, PluginCommand, VersionCommand, AuditCommand, RevokerCommand)
 }
 
 const logoBanner = `  pucora
