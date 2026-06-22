@@ -1,7 +1,7 @@
 Pucora Cobra
 ====
 
-An adapter of the [cobra](http://github.com/spf13/cobra) lib for the [Pucora](http://pucora.io) framework
+An adapter of the [cobra](http://github.com/spf13/cobra) lib for the [Pucora](http://pucora.in) framework
 
 Package cmd defines the cobra command structs and an execution method for adding an improved CLI to
 Pucora based api gateways

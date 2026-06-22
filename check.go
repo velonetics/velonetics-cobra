@@ -23,7 +23,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var SchemaURL = "https://pucora.io/schema/v%s/pucora.json"
+var SchemaURL = "https://pucora.in/schema/v%s/pucora.json"
 
 func errorMsg(content string) string {
 	if !IsTTY {
